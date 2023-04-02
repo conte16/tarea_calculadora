@@ -1,0 +1,22 @@
+<?php
+
+class Resta{
+    public $numero1;
+    public $numero2;
+
+    public function __construct($_numero1, $_numero2)
+    {
+        $this->numero1 = $_numero1;
+        $this->numero2 = $_numero2;
+    }
+
+    public function restar()
+    {
+    
+        echo "La resta de los numeros es: ". $this->numero1 - $this->numero2;
+    }
+}
+
+$total = new Resta($_POST['numero1'], $_POST['numero2']);
+$total->restar();
+?>
